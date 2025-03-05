@@ -1,0 +1,102 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.contenedor2 {
+   
+    padding: 35px;
+    border: 1px solid grey;
+   
+}
+
+.cuadros{
+
+    width: 500px;
+    
+    
+}
+
+.formulario1{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+.formulario2{
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.boton{
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+
+.bordes{
+    border-radius: 25px;
+
+}
+
+.dibujoCarta{
+    border: 1px solid grey;
+    border-radius: 10px;
+   
+}
+
+.dibujoCarta img{
+    max-width: 150px;
+    margin: 5px;
+}
+
+.dibujoCarta p{
+    text-align: left;
+    margin-left: 5px;
+}
+
+.dibujoCarta button{
+    align-self: flex-start;
+    margin: 5px;
+    background-color: dodgerblue;
+   color: white;
+   border-radius: 5px;
+}
+
+#cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.resultado-tarea{
+    border: 1px solid gray;
+    border-radius: 8px;
+    
+}
+
+.resultado-tarea p{
+    text-align: left;
+    margin-left: 8px;
+}
+
+#resultados{
+    margin-top: 10px;
+   
+}
+
+
+

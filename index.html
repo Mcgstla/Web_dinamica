@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Título de la página que se muestra en el navegador web-->
+    <title>FORMULARIO</title>
+    <!--enlace del archivo css para que se apliquen los estilos-->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!--Titulo principal de la página-->
+    <h1>Formulario de dinamismo</h1>
+
+      <!--Contenedor principal donde se va a agrupar la parte más importante de la página-->
+    <div class="contenedor">
+      <!--Con esto vamos a darle un borde a todo lo que agrupa-->
+      <fieldset class="bordes">
+        <!--Contenedor nuevo para agrupar una parte d ela página-->
+        <div class="formulario1">
+          <!--Se crea el formulario-->
+          <form name="formulario datos" id="formCrearTarea">
+            <!--Esto indica el título que se le da al formulario-->
+            <h2>Introduccion de datos</h2>
+            <!--Con este input se crea un controlador de entrada en el html por parte del usuario-->
+            <input
+              type="textarea"
+              id="nombreTarea"
+              placeholder="Nombre de la tarea"
+              class="cuadros"
+              name="prioridad"
+            /><br /><br />
+            <input
+              type="textarea"
+              id="descripcionTarea"
+              placeholder="Nombre del proyecto"
+              class="cuadros"
+              name="Descripcion de la tarea"
+            /><br /><br />
+
+            <!--Esto es un contenedor donde ponermos crear opciones que son elegibles por el usuario-->
+            <select id="prioTarea" class="cuadros">
+              <option value="1">Alta</option>
+              <option value="2">Media</option>
+              <option value="3">Baja</option></select
+            ><br /><br />
+
+            <input
+              type="date"
+              id="fecha"
+              class="cuadros"
+              min="1900-01-01"
+            /><br /><br />
+            <!--Con esto se crea otro controlador donde se puede chequear o no la opción disponible-->
+            <input type="checkbox" id="check" /> Prioritaria<br /><br />
+            <!--Esto es un boton de envío de los datos introducidos-->
+            <button type="submit" class="boton" id="botonAgregar">
+              Agregar
+            </button>
+          </form>
+        </div>
+      </fieldset>
+
+      <fieldset class="bordes">
+        <!--Nuevo contenedor para una segunda parte importante de la página-->
+        <div class="Formulario2">
+          <h2>Resultados de búsqueda</h2>
+
+          <select class="cuadros" id="formBuscador">
+            <option value="0">Todas</option>
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+          </select>
+
+          <div id="resultados"></div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="contenedor2 bordes">
+      <h2>Tareas</h2>
+      <br />
+      <div id="cartas"></div>
+      <!--Enlace necesario del archivo javascript para que todo se ejecute-->
+    <script src="paginaweb.js"></script>
+  </body>
+</html>
